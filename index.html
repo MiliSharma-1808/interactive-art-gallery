@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mili's Art Gallery</title>
+
+  <!-- ================= CSS ================= -->
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ================= GOOGLE FONTS ================= -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <!-- ================= LIGHTBOX ================= -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- ================= AOS ANIMATION ================= -->
+
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- ================= HERO SECTION ================= -->
+
+  <section class="parallax">
+
+    <div class="parallax-content" data-aos="fade-up">
+
+      <h1>Welcome to Mili's Art World 🎨</h1>
+
+      <p>
+        A collection of paintings, sketches,
+        mandalas and creativity crafted with passion.
+      </p>
+
+      <a href="#gallery" class="hero-btn">
+        Explore Gallery
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <h1>Mili's Art Gallery</h1>
+
+    <nav>
+
+      <ul>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- ================= GALLERY ================= -->
+
+  <section id="gallery">
+
+    <h2 data-aos="fade-up">
+      My Artworks
+    </h2>
+
+    <!-- ================= FILTER BUTTONS ================= -->
+
+    <div class="filters" data-aos="fade-up">
+
+      <button class="active"
+        onclick="filterArt('all', event)">
+        All
+      </button>
+
+      <button onclick="filterArt('acrylic', event)">
+        Acrylic
+      </button>
+
+      <button onclick="filterArt('sketch', event)">
+        Sketches
+      </button>
+
+      <button onclick="filterArt('mandala', event)">
+        Mandala Art
+      </button>
+
+      <button onclick="filterArt('oil', event)">
+        Oil Pastel
+      </button>
+
+    </div>
+
+    <!-- ================= GALLERY GRID ================= -->
+
+    <div class="gallery">
+
+      <!-- ================= ACRYLIC ================= -->
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./LaddooGopal-painting.png"
+          data-lightbox="acrylic"
+          data-title="Laddoo Gopal Painting">
+
+          <img src="./LaddooGopal-painting.png"
+            alt="Laddoo Gopal Painting" />
+
+        </a>
+      </div>
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./Ramlala2-painting.png"
+          data-lightbox="acrylic"
+          data-title="Ramlala Painting">
+
+          <img src="./Ramlala2-painting.png"
+            alt="Ramlala Painting" />
+
+        </a>
+      </div>
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./RadhaKrishna-painting.png"
+          data-lightbox="acrylic"
+          data-title="Radha Krishna Painting">
+
+          <img src="./RadhaKrishna-painting.png"
+            alt="Radha Krishna Painting" />
+
+        </a>
+      </div>
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./krishna with  gaiya framed.jpeg"
+          data-lightbox="acrylic"
+          data-title="Krishna Painting">
+
+          <img src="./krishna with  gaiya framed.jpeg"
+            alt="Krishna Painting" />
+
+        </a>
+      </div>
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./Radha Krishna eyes.jpeg"
+          data-lightbox="acrylic"
+          data-title="Radha Krishna Eyes">
+
+          <img src="./Radha Krishna eyes.jpeg"
+            alt="Radha Krishna Eyes" />
+
+        </a>
+      </div>
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./kanha-painting.png"
+          data-lightbox="acrylic"
+          data-title="Kanha Painting">
+
+          <img src="./kanha-painting.png"
+            alt="Kanha Painting" />
+
+        </a>
+      </div>
+
+      <div class="art-card acrylic" data-aos="zoom-in">
+        <a href="./Radharani-painting.png"
+          data-lightbox="acrylic"
+          data-title="RadhaRani Painting">
+
+          <img src="./Radharani-painting.png"
+            alt="RadhaRani Painting" />
+
+        </a>
+      </div>
+
+      <!-- ================= SKETCH ================= -->
+
+      <div class="art-card sketch" data-aos="zoom-in">
+        <a href="./DancingKanha-sketch.png"
+          data-lightbox="sketch"
+          data-title="Dancing Kanha Sketch">
+
+          <img src="./DancingKanha-sketch.png"
+            alt="Dancing Kanha Sketch" />
+
+        </a>
+      </div>
+
+      <div class="art-card sketch" data-aos="zoom-in">
+        <a href="./ViratKohli-sketch.png"
+          data-lightbox="sketch"
+          data-title="Virat Kohli Sketch">
+
+          <img src="./ViratKohli-sketch.png"
+            alt="Virat Kohli Sketch" />
+
+        </a>
+      </div>
+
+      <div class="art-card sketch" data-aos="zoom-in">
+        <a href="./GK-sketch.png"
+          data-lightbox="sketch"
+          data-title="GK Sketch">
+
+          <img src="./GK-sketch.png"
+            alt="GK Sketch" />
+
+        </a>
+      </div>
+
+      <div class="art-card sketch" data-aos="zoom-in">
+        <a href="./GK-sketch2.png"
+          data-lightbox="sketch"
+          data-title="GK Sketch 2">
+
+          <img src="./GK-sketch2.png"
+            alt="GK Sketch 2" />
+
+        </a>
+      </div>
+
+      <!-- ================= MANDALA ================= -->
+
+      <div class="art-card mandala" data-aos="zoom-in">
+        <a href="./flute-madala.png"
+          data-lightbox="mandala"
+          data-title="Flute Mandala">
+
+          <img src="./flute-madala.png"
+            alt="Flute Mandala" />
+
+        </a>
+      </div>
+
+      <div class="art-card mandala" data-aos="zoom-in">
+        <a href="./peacock mandala.jpeg"
+          data-lightbox="mandala"
+          data-title="peacock Mandala">
+
+          <img src="./peacock mandala.jpeg"
+            alt="peacock Mandala" />
+
+        </a>
+      </div>
+
+      <div class="art-card mandala" data-aos="zoom-in">
+        <a href="./MataRani-Mandala.jpg"
+          data-lightbox="mandala"
+          data-title="MataRani-Mandala ">
+
+          <img src="./MataRani-Mandala.jpg"
+            alt="MataRani-Mandala" />
+
+        </a>
+      </div>
+
+      <div class="art-card mandala" data-aos="zoom-in">
+        <a href="./Lady-mandala.png"
+          data-lightbox="mandala"
+          data-title="Lady Mandala">
+
+          <img src="./Lady-mandala.png"
+            alt="Lady-mandala" />
+
+        </a>
+      </div>
+
+      <div class="art-card mandala" data-aos="zoom-in">
+        <a href="./Guitar-mandala.png"
+          data-lightbox="mandala"
+          data-title="Guitar Mandala">
+
+          <img src="./Guitar-mandala.png"
+            alt="Guitar Mandala" />
+
+        </a>
+      </div>
+
+      <div class="art-card mandala" data-aos="zoom-in">
+        <a href="./Mandala.png"
+          data-lightbox="mandala"
+          data-title="Mandala">
+
+          <img src="./Mandala.png"
+            alt="Mandala" />
+
+        </a>
+      </div>
+
+      
+
+      <!-- Add your remaining artwork cards here -->
+     <div class="art-card oil" data-aos="zoom-in">
+        <a href="./waterfall-oilpastel.png"
+          data-lightbox="oil"
+          data-title=" Waterfall Oil Pastels">
+
+          <img src="./waterfall-oilpastel.png"
+            alt="waterfall-oilpastel" />
+
+        </a>
+      </div>
+
+      
+
+      <div class="art-card oil" data-aos="zoom-in">
+        <a href="./Unicorn-oilpastel.png"
+          data-lightbox="oil"
+          data-title=" Unicorn-oilpastel Oil Pastels">
+
+          <img src="./Unicorn-oilpastel.png"
+            alt="Unicorn-oilpastel" />
+
+        </a>
+      </div>
+
+      <div class="art-card oil" data-aos="zoom-in">
+        <a href="./cat-oilpastel.png"
+          data-lightbox="oil"
+          data-title=" Cat Oil Pastels">
+
+          <img src="./cat-oilpastel.png"
+            alt="Cat oilpastel" />
+
+        </a>
+      </div>
+
+      <div class="art-card oil" data-aos="zoom-in">
+        <a href="./landscape-oilpastel.png"
+          data-lightbox="oil"
+          data-title="Landscape Oil Pastels">
+
+          <img src="./landscape-oilpastel.png"
+            alt="Landscape" />
+
+        </a>
+      </div>
+      
+      <div class="art-card oil" data-aos="zoom-in">
+        <a href="./Krishna-oilpastel.png"
+          data-lightbox="oil"
+          data-title=" Krishna Oil Pastels">
+
+          <img src="./Krishna-oilpastel.png"
+            alt="Krishna Oil pastel" />
+
+        </a>
+      </div>
+
+  
+    </div>
+
+  </section>
+
+  <!-- ================= SECOND PARALLAX SECTION ================= -->
+
+  <section class="parallax2">
+
+    <div class="parallax-content second-parallax-content" data-aos="fade-up">
+
+      <h1>
+        Every Stroke Holds A Story ✨
+      </h1>
+
+      <p>
+        Art is not what you see,
+        but what you make others feel.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" data-aos="fade-up">
+
+    <h2>About Me</h2>
+
+    <p>
+      Hi! I'm Mili Sharma, an artist and a Computer Science and Engineering student.
+      I love expressing creativity through paintings, sketches,
+      mandalas and oil pastels.
+      This gallery is a reflection of my artistic journey and passion.
+    </p>
+
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" data-aos="fade-up">
+
+    <h2>Contact</h2>
+
+    <p>
+      Follow me on Instagram:
+      <a href="https://instagram.com/shadesofserenity_18"
+        target="_blank">
+
+        @shadesofserenity_18
+
+      </a>
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:milisharma1808@gmail.com">
+        milisharma1808@gmail.com
+      </a>
+    </p>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    <p>
+      &copy; 2026 Mili Sharma.
+      All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <!-- ================= ADMIN BUTTON ================= -->
+
+  <button id="adminBtn">
+    + Add Artwork
+  </button>
+
+  <!-- ================= ADMIN PANEL ================= -->
+
+  <div id="adminPanel">
+
+    <h2>Add New Artwork</h2>
+
+    <input type="text"
+      id="artTitle"
+      placeholder="Artwork Title">
+
+    <input type="text"
+      id="artCategory"
+      placeholder="Category (acrylic/sketch/mandala/oil)">
+
+    <input type="file"
+      id="artFile"
+      accept="image/*">
+
+    <button onclick="addArtwork()">
+      Add Artwork
+    </button>
+
+  </div>
+
+  <!-- ================= SCRIPTS ================= -->
+
+  <!-- Lightbox -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- AOS -->
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Main JS -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
